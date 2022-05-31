@@ -6,12 +6,12 @@ variable "region" {
 
 variable "lambda_function_name" {
   type        = string
-  default     = "TestLambdaPython"
+  default     = "TopTenPosts"
   description = "The name of the Lambda function"
 }
 
 variable "lambda_description" {
   type        = string
-  default     = "Test Lambda function written in Python"
+  default     = "Python lambda function to fetch top 10 posts"
   description = "The description of the Lambda function"
 }
