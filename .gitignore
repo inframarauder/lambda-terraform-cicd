@@ -2,6 +2,9 @@
 **/.terraform/*
 .terraform
 
+# Local builds:
+builds/
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
