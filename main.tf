@@ -7,8 +7,13 @@ module "lambda_function" {
   runtime       = "python3.8"
 
   source_path = "lambda/"
+  create_lambda_function_url = true
 
   tags = {
     ManagedBy = "Terraform"
   }
+}
+
+output "lambda_function_url" {
+  value = module.lambda_function.lambda_function_url
 }
