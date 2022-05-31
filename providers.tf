@@ -12,6 +12,13 @@ terraform {
     region         = "ap-south-1"
     dynamodb_table = "tf-state-lock"
   }
+
+  cloud{
+    organization = "subhasis020299"
+    workspaces {
+      name = "gh-actions-demo"
+    }
+  }
 }
 
 provider "aws" {
